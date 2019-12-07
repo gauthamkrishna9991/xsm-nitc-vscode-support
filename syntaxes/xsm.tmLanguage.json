@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "XSM (NITC)",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [	
+				{
+					"name": "keyword.control.xsm",
+					"match": "\\b(MOV|ADD|SUB|MUL|DIV|INR|DCR|LT|GT|EQ|NE|GE|LE|JZ|JNZ|JMP|PUSH|POP|CALL|RET|BRKP|INT|NOP|LOADI|LOAD|STORE|ENCRYPT|BACKUP|RESTORE|PORT|IN|INI|OUT|IRET|HALT|TSL|START|RESET)\\b"
+				},
+				{
+					"name" : "constant.language.register.xsm",
+					"match": "\\b(R0|R1|R2|R3|R4|R5|R6|R7|R8|R9|R10|R11|R12|R13|R14|R15|R16|R17|R18|R19|BP|SP|IP|PTBR|PTLR|EIP|EC|EPN|EMA|P0|P1|P2|P3)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.xsm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.xsm",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers" : {
+			"name" : "constant.numeric.spl-nitc",
+			"match": "\\b[\\-]{0,1}[0-9]{1,9}\\b"
+		}
+	},
+	"scopeName": "source.xsm"
+}

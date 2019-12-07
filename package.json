@@ -1,0 +1,26 @@
+{
+    "name": "xsm-nitc-vscode-support",
+    "displayName": "XSM (NITC) Support",
+    "description": "XSM Support for Visual Studio Code",
+    "publisher": "gauthamkrishna9991",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xsm",
+            "aliases": ["XSM (NITC)", "xsm"],
+            "extensions": [".xsm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xsm",
+            "scopeName": "source.xsm",
+            "path": "./syntaxes/xsm.tmLanguage.json"
+        }]
+    }
+}
