@@ -21,7 +21,7 @@ I believe you find this good to help you in your OS Labs :). Thanks.
 
 ### 0.0.1
 
-Download the release [here](release/0.0.1/xsm-nitc-vscode-support-0.0.1.vsix "Release 0.0.1")
+Download the release [here](releases/0.0.1/xsm-nitc-vscode-support-0.0.1.vsix "Release 0.0.1")
 
 This is a beta release, first intended only for personal use. Email me at goutham_b170214cs@nitc.ac.in for suggestions.
 
